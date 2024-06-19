@@ -1,12 +1,13 @@
 import React from 'react';
+import Navbar from '../Navbar/Navbar';
 
 import './App.scss';
 
-function App() {
+const App = () => {
 
   return (
       <div>
-        <h1>Scarred Steel</h1>
+        <Navbar />
       </div>
   );
 };
