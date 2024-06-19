@@ -1,0 +1,32 @@
+@use '/src/styles/variables' as v;
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.home-logo {
+  width: 80%;
+  height: 80%;
+}
+.phone-number {
+  margin-top: -0.5em;
+  color: v.$red;
+  font-family: v.$headings;
+  font-size: 1.6em;
+  &:hover {
+    color: v.$yellow;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .phone-number {
+    margin-top: 1.8em;
+    position: absolute;
+    left: 88%; 
+    white-space: nowrap; 
+  }
+
+}
