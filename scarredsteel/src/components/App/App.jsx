@@ -6,7 +6,7 @@ function App() {
 
   return (
       <div>
-        Scarred Steel
+        <h1>Scarred Steel</h1>
       </div>
   );
 };
