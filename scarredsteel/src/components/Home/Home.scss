@@ -1,15 +1,5 @@
 @use '/src/styles/variables' as v;
 
-.home-section {
-  background-image: url('/src/assets/images/welding-far.jpeg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
 .home-box {
   border: solid v.$grey 0.1em;
   margin: 4em;
