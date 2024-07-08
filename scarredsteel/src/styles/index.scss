@@ -45,12 +45,64 @@ a {
 
 h1 {
   font-family: v.$headings;
+  color: v.$light-green;
+  font-size: 4em;
+  text-align: center;
+  text-shadow: .1em .1em 0 hsl(199, 18%, 20%);
+  margin-bottom: 1em;
+  @media (min-width: 768px) {
+    margin-top: 1em;
+  }
 }
 
 h2 {
   font-family: v.$text;
+  color: v.$light-grey;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: .1em .1em 0 hsl(199, 18%, 20%);
+  margin-bottom: 1em; 
 }
 
 p {
   font-family: v.$paragraph;
 }
+
+button {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, v.$light-green, v.$dark-green);
+    border-radius: 6px;
+    box-shadow: v.$light-grey(0, 0, 0, 0.1) 0 2px 4px;
+    color: v.$black;
+    cursor: pointer;
+    font-family: v.$text;
+    margin: 0.5em;
+    height: 3em;
+    line-height: 1em;
+    outline: 100;
+    overflow: hidden;
+    pointer-events: auto;
+    text-align: center;
+    vertical-align: top;
+    width: 40%;
+    border: 0;
+    transition: box-shadow .2s;
+    transition: all .2s ease-in-out; 
+
+    @media (min-width: 768px) {
+      width: 20%;
+      margin: 1em;
+    }
+  }
+  
+  button:hover {
+    color: v.$yellow;
+    transform: scale(1.1); 
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+  }
