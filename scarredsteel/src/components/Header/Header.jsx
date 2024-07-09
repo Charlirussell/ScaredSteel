@@ -1,4 +1,4 @@
-import textLogo from '../../assets/logos/text-logo.png';
+import textLogo from '../../assets/logos/text-logo-2.png';
 
 import './Header.scss';
 
