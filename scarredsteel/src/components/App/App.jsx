@@ -8,6 +8,7 @@ import Metalwork from '../Metalwork/Metalwork';
 import Restoration from '../Restoration/Restoration';
 import Sandblasting from '../Sandblasting/Sandblasting';
 import Layout from '../Layout/Layout';
+import Footer from '../Footer/Footer';
 
 import './App.scss';
 
@@ -58,6 +59,7 @@ const App = () => {
           }
         />
       </Routes>
+      <Footer />
     </div>
   );
 };
