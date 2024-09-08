@@ -6,10 +6,12 @@
   align-items: center;
   text-align: center;
 }
+
 .home-logo {
   width: 80%;
   height: 80%;
 }
+
 .phone-number {
   margin-top: -0.5em;
   color: v.$red;
@@ -21,12 +23,10 @@
 }
 
 @media (min-width: 768px) {
-
   .phone-number {
     margin-top: 1.8em;
     position: absolute;
-    left: 88%; 
-    white-space: nowrap; 
+    left: 88%;
+    white-space: nowrap;
   }
-
 }
