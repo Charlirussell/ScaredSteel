@@ -3,7 +3,6 @@ import './Home.scss';
 import HomeImg from '/src/assets/images/welding-far.jpeg';
 
 const Home = () => {
-  const [selectedImage, setSelectedImage] = useState(null);
   const [images, setImages] = useState([]);
 
   useEffect(() => {

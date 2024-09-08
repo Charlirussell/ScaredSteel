@@ -49,7 +49,7 @@ h1 {
   font-size: 4em;
   text-align: center;
   text-shadow: 1.8px 1.8px 0 hsl(199, 18%, 20%);
-  margin-bottom: 1em; 
+  margin-bottom: 0.5em; 
   @media (min-width: 768px) {
     margin-top: 1em;
   }
@@ -66,6 +66,11 @@ h2 {
 
 p {
   font-family: v.$paragraph;
+  font-size: 1.5em;
+  color: v.$green;
+  text-shadow: 
+  3px 3px 6px rgba(0, 0, 0, 0.9), 
+  -2px -2px 4px rgba(0, 0, 0, 0.7);
 }
 
 button {

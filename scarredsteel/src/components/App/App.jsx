@@ -7,7 +7,8 @@ import Home from '../Home/Home';
 import Paint from '../Paint/Paint';
 import Metalwork from '../Metalwork/Metalwork';
 import Restoration from '../Restoration/Restoration';
-import Sandblasting from '../Sandblasting/Sandblasting';
+import Fabrication from '../Fabrication/Fabrication';
+import Roofing from '../Roofing/Roofing';
 
 
 import './App.scss';
@@ -23,7 +24,8 @@ const App = () => {
         <Route path="/paint" element={<Paint />}/>
         <Route path="/metalworks" element={<Metalwork />}/>
         <Route path="/restoration" element={<Restoration />}/>
-        <Route path="/sandblasting" element={<Sandblasting />}/>
+        <Route path="/fabrication" element={<Fabrication />}/>
+        <Route path="/roofing" element={<Roofing />}/>
       </Routes>
       <Footer />
     </div>
