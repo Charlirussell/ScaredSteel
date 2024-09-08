@@ -1,16 +1,15 @@
 @use '/src/styles/variables' as v;
 
 .navbar {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   font-size: 1.2em;
   height: 6em;
   width: 100%;
-  position: fixed;
   top: 3.3em;
   right: 0;
-  z-index: 50;
   font-family: v.$text;
 
   .menu {

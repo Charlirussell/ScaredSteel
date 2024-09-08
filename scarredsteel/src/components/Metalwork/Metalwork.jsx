@@ -16,7 +16,6 @@ const Metalwork = () => {
         </div>
       </div>
       <div className='metalwork-section'>
-        
       </div>
     </>
   );
