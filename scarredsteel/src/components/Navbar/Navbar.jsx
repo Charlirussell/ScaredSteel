@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
+
 import './Navbar.scss';
 
 const Navbar = () => {
@@ -26,25 +27,25 @@ const Navbar = () => {
 
   const handleLinkClick = () => {
     if (window.innerWidth <= 768) {
-      showMenu(false);
+      setShowMenu(false);
     }
   };
   
 
   return (
-    <nav>
-      <div className='hamburger' onClick={toggleMenu}>
-        <div className={`burger-icon ${showMenu ? 'close' : 'open'}`}></div>
-      </div>
-      <div className={`navbar ${showMenu ? 'show-menu' : ''}`}>
-      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/" onClick={handleLinkClick}>Home</NavLink>
-      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/paint" onClick={handleLinkClick}>Paint</NavLink>
-      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/metalworks" onClick={handleLinkClick}>Metal Work</NavLink>
-      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/fabrication" onClick={handleLinkClick}>Fabrication</NavLink>
-      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/restoration" onClick={handleLinkClick}>Restoration</NavLink>
-      <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/roofing" onClick={handleLinkClick}>Roofing</NavLink>
-      </div>
-    </nav>
+      <nav>
+        <div className='hamburger' onClick={toggleMenu}>
+          <div className={`burger-icon ${showMenu ? 'close' : 'open'}`}></div>
+        </div>
+        <div className={`navbar ${showMenu ? 'show-menu' : ''}`}>
+        <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/" onClick={handleLinkClick}>Home</NavLink>
+        <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/paint" onClick={handleLinkClick}>Paint</NavLink>
+        <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/metalworks" onClick={handleLinkClick}>Metal Work</NavLink>
+        <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/fabrication" onClick={handleLinkClick}>Fabrication</NavLink>
+        <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/restoration" onClick={handleLinkClick}>Restoration</NavLink>
+        <NavLink className={({ isActive }) =>isActive ? 'menu menu--active' : 'menu'} to="/roofing" onClick={handleLinkClick}>Roofing</NavLink>
+        </div>
+      </nav>
   );
 };
 

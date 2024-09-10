@@ -1,40 +1,38 @@
 @use '/src/styles/variables' as v;
 
 .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 3.6em; 
-  z-index: 100;
-} 
-
-.header-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.home-logo {
-  width: 80%;
-  height: 80%;
-}
-
-.phone-number {
-  margin-top: -0.5em;
-  color: v.$red;
-  font-family: v.$headings;
-  font-size: 1.6em;
-  &:hover {
-    color: v.$yellow;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } 
+  
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-}
-
-@media (min-width: 768px) {
+  
+  .home-logo {
+    width: 80%;
+    height: 80%;
+  }
+  
   .phone-number {
-    margin-top: 1.8em;
-    position: absolute;
-    left: 88%;
-    white-space: nowrap;
+    margin-top: -0.5em;
+    color: v.$red;
+    font-family: v.$headings;
+    font-size: 1.6em;
+    &:hover {
+      color: v.$yellow;
+    }
   }
-}
+  
+  @media (min-width: 768px) {
+    .phone-number {
+      margin-top: 1.8em;
+      position: absolute;
+      left: 78%;
+      white-space: nowrap;
+    }
+  } 

@@ -10,7 +10,7 @@ const Roofing = () => {
         <img src={RoofingImg} alt="roofing-img" className='roofing-image' />
         <div className='roofing-text'>
           <h1>Scarred Steel</h1>
-          <h2>Roofing Spraying Guernsey</h2>
+          <h2>Roofing Guernsey</h2>
         </div>
         <div className='button-container'>
           <button><a href="tel:07911711828">Call Us</a></button>
