@@ -1,26 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import FabricationImg from "/src/assets/images/welding-close.jpg";
+import Fabri from '../../assets/images/fabrication.jpg';
+import Fabri1 from '../../assets/images/fabrication-1.jpg';
+import Fabri2 from '../../assets/images/fabrication-2.jpg';
+import Fabri3 from '../../assets/images/fabrication-3.jpg';
+import Fabri4 from '../../assets/images/fabrication-4.jpg';
+
 import './Fabrication.scss';
 
 const Fabrication = () => {
-  const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    const importImages = async () => {
-      const imagePaths = [
-        import('../../assets/images/fabrication.jpg'),
-        import('../../assets/images/fabrication-1.jpg'),
-        import('../../assets/images/fabrication-2.jpg'),
-        import('../../assets/images/fabrication-3.jpg'),
-        import('../../assets/images/fabrication-4.jpg'),
-      ];
-
-      const loadedImages = await Promise.all(imagePaths);
-      setImages(loadedImages.map(image => ({ src: image.default })));
-    };
-
-    importImages();
-  }, []);
+  const images = [
+    { src: Fabri, className: 'fabri-gallery-img' },
+    { src: Fabri1, className: 'fabri-gallery-img-1' },
+    { src: Fabri2, className: 'fabri-gallery-img-2' },
+    { src: Fabri3, className: 'fabri-gallery-img-3' },
+    { src: Fabri4, className: 'fabri-gallery-img-4' },
+  ];
   return (
     <>
       <div className='fabrication-main'>
@@ -35,37 +30,11 @@ const Fabrication = () => {
         </div>
       </div>
       <div className='fabrication-section'>
-        <div className='gallery-container'>
-          <div className='side-images left'>
-            <img
-              src={images[1]?.src}
-              alt='Left Image 1'
-              className='side-image'
-            />
-            <img
-              src={images[2]?.src}
-              alt='Left Image 2'
-              className='side-image'
-            />
-          </div>
-          <img
-            src={images[0]?.src}
-            alt='Large Image'
-            className='large-image'
-          />
-          <div className='side-images right'>
-            <img
-              src={images[3]?.src}
-              alt='Right Image 1'
-              className='side-image'
-            />
-            <img
-              src={images[4]?.src}
-              alt='Right Image 2'
-              className='side-image'
-            />
-          </div>
-        </div> 
+        <div className='fabrication-gallery'>
+          {images.map((image, index) => (
+              <img key={index} src={image.src} alt={`gallery-img-${index + 1}`} className={image.className} />
+            ))}
+        </div>
       </div>
     </>
   );

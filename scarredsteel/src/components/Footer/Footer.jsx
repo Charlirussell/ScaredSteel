@@ -16,7 +16,7 @@ const Footer = () => {
           </ul>
           <h3>Links</h3>
           <ul>
-            <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100063628014620" target="_blank" rel="noopener noreferrer">Facebook</a></li>
             <li><Link to="/privacy">Privacy Policy</Link></li>
             <li><Link to="/terms">Terms & Conditions</Link></li>
             <li><Link to="/cookies">Cookies</Link></li>

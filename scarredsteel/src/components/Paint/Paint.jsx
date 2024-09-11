@@ -2,6 +2,7 @@ import PaintImg from "/src/assets/images/paint.jpg";
 import './Paint.scss';
 
 const Paint = () => {
+  
   return (
     <>
       <div className='paint-main'>
@@ -16,7 +17,9 @@ const Paint = () => {
         </div>
       </div>
       <div className='paint-section'>
-        
+        <div className='gallery-container'>
+            
+          </div>
       </div>
     </>
   );
