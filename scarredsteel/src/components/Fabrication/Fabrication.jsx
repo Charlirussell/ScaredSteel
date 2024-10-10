@@ -1,8 +1,7 @@
 import React from 'react';
 import FabricationImg from "/src/assets/images/welding-close.jpg";
-import Fabri from '../../assets/images/fabrication.jpg';
-import Fabri1 from '../../assets/images/fabrication-1.jpg';
-import Fabri2 from '../../assets/images/fabrication-2.jpg';
+import Fabri1 from '../../assets/images/fabrication.jpg';
+import Fabri2 from '../../assets/images/fabrication-1.jpg';
 import Fabri3 from '../../assets/images/fabrication-3.jpg';
 import Fabri4 from '../../assets/images/fabrication-4.jpg';
 
@@ -10,11 +9,10 @@ import './Fabrication.scss';
 
 const Fabrication = () => {
   const images = [
-    { src: Fabri, className: 'fabri-gallery-img' },
     { src: Fabri1, className: 'fabri-gallery-img-1' },
-    { src: Fabri2, className: 'fabri-gallery-img-2' },
-    { src: Fabri3, className: 'fabri-gallery-img-3' },
-    { src: Fabri4, className: 'fabri-gallery-img-4' },
+    { src: Fabri2, className: 'fabri-gallery-img-3' },
+    { src: Fabri3, className: 'fabri-gallery-img-4' },
+    { src: Fabri4, className: 'fabri-gallery-img-5' },
   ];
   return (
     <>

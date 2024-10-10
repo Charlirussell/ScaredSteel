@@ -4,20 +4,18 @@ import Wheels from '../../assets/images/wheels.jpg';
 import Wheels1 from '../../assets/images/wheels-1.jpg';
 import Wheels2 from '../../assets/images/wheels-2.jpg';
 import Wheels3 from '../../assets/images/wheels-3.jpg';
-import Wheels4 from '../../assets/images/wheels-4.jpg';
-import Wheels5 from '../../assets/images/wheels-5.jpg';
-import Wheels6 from '../../assets/images/wheels-6.jpg';
+import Wheels4 from '../../assets/images/wheels-5.jpg';
+import Wheels5 from '../../assets/images/wheels-6.jpg';
 import './Restoration.scss';
 
 const Restoration = () => {
   const images = [
-    { src: Wheels, className: 'resto-gallery-img' },
-    { src: Wheels1, className: 'resto-gallery-img-1' },
-    { src: Wheels2, className: 'resto-gallery-img-2' },
-    { src: Wheels3, className: 'resto-gallery-img-3' },
-    { src: Wheels4, className: 'resto-gallery-img-4' },
-    { src: Wheels5, className: 'resto-gallery-img-5' },
-    { src: Wheels6, className: 'resto-gallery-img-6' },
+    { src: Wheels, className: 'resto-gallery-img-1' },
+    { src: Wheels1, className: 'resto-gallery-img-2' },
+    { src: Wheels2, className: 'resto-gallery-img-3' },
+    { src: Wheels3, className: 'resto-gallery-img-4' },
+    { src: Wheels4, className: 'resto-gallery-img-5' },
+    { src: Wheels5, className: 'resto-gallery-img-6' },
   ];
   
   return (
