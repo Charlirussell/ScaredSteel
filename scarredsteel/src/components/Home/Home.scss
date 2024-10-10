@@ -35,18 +35,28 @@
 .home-section {
   background: rgb(0,0,0);
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(61,62,71,1) 100%);
-  padding: 2.5em 1.25em; 
+  padding: 2.5em 1.2em; 
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 5em;
 }
+
+.home-paragraph {
+  margin-bottom: 2em;
+  text-align: center;
+  padding: 0em 20em 0em 20em;
+}
+
 .home-gallery {
   display: grid;
   grid-template-columns: repeat(8, 0.75fr); 
-  grid-template-rows: repeat(4, 0.75fr); 
+  grid-template-rows: repeat(3, 0.75fr); 
   gap: 1em;
-  margin-top: 2em;
+  margin-top: 3em;
+  max-width: 80%;
   padding: 1em;
 }
 

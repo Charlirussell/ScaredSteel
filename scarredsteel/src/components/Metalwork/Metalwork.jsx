@@ -18,9 +18,13 @@ const Metalwork = () => {
         </div>
       </div>
       <div className='metalwork-section'>
-        <div className='gallery-container'>
-        
+        <div className='metalwork-paragraph'>
+            <h1>Our Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque necessitatibus delectus, quidem consectetur nihil ullam asperiores aperiam. Asperiores exercitationem nemo odio, labore fuga aut eligendi ea dolor libero aspernatur ex!</p>
           </div>
+          <div className='gallery-container'>
+          
+            </div>
       </div>
     </>
   );

@@ -39,64 +39,25 @@
     padding: 2.5em 1.25em; 
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-bottom: 5em;
+  }
+
+  .metalwork-paragraph {
+    margin-bottom: 2em;
+    text-align: center;
+    padding: 0em 20em 0em 20em;
   }
   
   .gallery-container {
-    margin-top: 3em;
     display: grid;
-    grid-template-areas: 
-      "left large right"
-      "top top top";
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: auto 2fr;
-    gap: 2em;
-    align-items: center;
-    justify-items: center;
-  }
-  
-  .large-image {
-    grid-area: large;
-    width: 44em; 
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .large-image:hover {
-    transform: scale(1.1);
-  }
-  
-  .side-images {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(8, 0.75fr); 
+    grid-template-rows: repeat(3, 0.75fr); 
     gap: 1em;
+    margin-top: 3em;
+    padding: 1em;
   }
   
-  .left {
-    grid-area: left;
-    justify-self: end;
-  }
-  
-  .right {
-    grid-area: right;
-    justify-self: start;
-  }
-  
-  .side-image {
-    width: 20em; 
-    height: auto;
-    cursor: pointer;
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .side-image:hover {
-    transform: scale(1.1);
-  }
-  
-  img[alt="Left Image 1"] {
-  
-    height: 15em;
-    width: 20em
-  }
+ 

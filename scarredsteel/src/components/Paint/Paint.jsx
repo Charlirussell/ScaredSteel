@@ -17,9 +17,13 @@ const Paint = () => {
         </div>
       </div>
       <div className='paint-section'>
+        <div className='paint-paragraph'>
+            <h1>Our Services</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum enim quos unde officiis, et nisi asperiores commodi quam, vel aut magnam harum, vitae nam libero quia impedit voluptas quasi nobis.</p>
+        </div>
         <div className='gallery-container'>
             
-          </div>
+        </div>
       </div>
     </>
   );

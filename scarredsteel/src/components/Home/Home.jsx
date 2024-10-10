@@ -35,6 +35,10 @@ const Home = () => {
         </div>
       </div>
       <div className='home-section'>
+        <div className='home-paragraph'>
+          <h1>Our Services</h1>
+          <p>Scarred Steel offers a wide range of services, from welding and fabrication to restoration and repair. We are dedicated to providing high-quality workmanship and excellent customer service. Our team of skilled professionals has the experience and expertise to handle all types of metal work projects, big or small. Whether you need custom metal fabrication, structural steelwork, or metal restoration services, we have you covered. Contact us today to learn more about our services and how we can help you with your metal work needs.</p>
+        </div>
         <div className='home-gallery'>
           {images.map((image, index) => (
             <img key={index} src={image.src} alt={`gallery-img-${index + 1}`} className={image.className} />

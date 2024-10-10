@@ -34,11 +34,15 @@ const Restoration = () => {
         </div>
       </div>
       <div className='restoration-section'>
-        <div className='restoration-container'>
-          {images.map((image, index) => (
-            <img key={index} src={image.src} alt={`gallery-img-${index + 1}`} className={image.className} />
-          ))}
-        </div> 
+        <div className='restoration-paragraph'>
+            <h1>Our Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, cum laboriosam. Reprehenderit sunt labore ea? Eum architecto obcaecati sint! Nesciunt quasi quis dolore, dolores dolor nobis magnam ab ea beatae!</p>
+        </div>
+          <div className='restoration-gallery'>
+            {images.map((image, index) => (
+              <img key={index} src={image.src} alt={`gallery-img-${index + 1}`} className={image.className} />
+            ))}
+          </div> 
       </div>
     </>
   );

@@ -30,6 +30,10 @@ const Fabrication = () => {
         </div>
       </div>
       <div className='fabrication-section'>
+      <div className='fabrication-paragraph'>
+          <h1>Our Services</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed rem, facere numquam inventore vero accusamus dolor molestias error, reprehenderit magnam dolore. Error sunt suscipit ad deleniti est enim deserunt laboriosam.</p>
+        </div>
         <div className='fabrication-gallery'>
           {images.map((image, index) => (
               <img key={index} src={image.src} alt={`gallery-img-${index + 1}`} className={image.className} />

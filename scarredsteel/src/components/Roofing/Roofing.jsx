@@ -4,6 +4,9 @@ import React from 'react';
 import './Roofing.scss';
 
 const Roofing = () => {
+  const images = [
+
+  ];
     return (
     <>
       <div className='roofing-main'>
@@ -18,7 +21,15 @@ const Roofing = () => {
         </div>
       </div>
       <div className='roofing-section'>
-        
+        <div className='roofing-paragraph'>
+          <h1>Our Services</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque tempore omnis ducimus explicabo eaque mollitia porro fugiat animi nulla harum amet, ratione modi eos voluptate, tenetur aperiam laborum voluptatem consectetur!</p>
+        </div>
+        <div className='roofing-gallery'>
+          {images.map((image, index) => (
+            <img key={index} src={image.src} alt={`gallery-img-${index + 1}`} className={image.className} />
+          ))}
+        </div>
       </div>
     </>
     );
