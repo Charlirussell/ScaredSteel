@@ -33,8 +33,8 @@ const Restoration = () => {
       </div>
       <div className='restoration-section'>
         <div className='restoration-paragraph'>
-            <h1>Our Services</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, cum laboriosam. Reprehenderit sunt labore ea? Eum architecto obcaecati sint! Nesciunt quasi quis dolore, dolores dolor nobis magnam ab ea beatae!</p>
+            <h1>Restoration Services</h1>
+            <p>At Scarred Steel, we specialize in the restoration and repair of various metalwork projects in Guernsey, including fire escapes, gates, and more. From intricate wrought iron details to essential repairs, we focus on delivering exceptional craftsmanship and top-tier service. Our experienced team uses advanced restoration techniques and high-quality materials to bring aged or damaged metalwork back to life. Whether you need restoration for outdoor structures, industrial machinery, or custom gates, we're here to help. Contact us today to learn how Scarred Steel can transform your metalwork with our expert restoration services.</p>
         </div>
           <div className='restoration-gallery'>
             {images.map((image, index) => (
