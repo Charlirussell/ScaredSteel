@@ -1,26 +1,11 @@
 import React from 'react';
 import HomeImg from '/src/assets/images/welding-far.jpeg';
-import Stairs1 from '../../assets/images/stairs-1.jpg';
-import Stairs2 from '../../assets/images/stairs-2.jpg';
-import Stairs3 from '../../assets/images/stairs-3.jpg';
-import Stairs4 from '../../assets/images/stairs-4.jpg';
-import Stairs5 from '../../assets/images/stairs-5.jpg';
-import Stairs6 from '../../assets/images/stairs-7.jpg';
-import Stairs7 from '../../assets/images/stairs-6.jpg';
+import HomeGalleryTn from '/src/assets/images/h-gallery-tn.webp';
 import './Home.scss';
 
 
 const Home = () => {
-  const images = [
-    { src: Stairs1, className: 'home-gallery-img-1' },
-    { src: Stairs2, className: 'home-gallery-img-2' },
-    { src: Stairs3, className: 'home-gallery-img-3' },
-    { src: Stairs4, className: 'home-gallery-img-4' },
-    { src: Stairs5, className: 'home-gallery-img-5' },
-    { src: Stairs6, className: 'home-gallery-img-6' },
-    { src: Stairs7, className: 'home-gallery-img-7' },
-  ];
-  
+
   return (
     <>
       <div className='home-main'>
@@ -40,9 +25,7 @@ const Home = () => {
           <p>At Scarred Steel, we specialize in high-quality metal restoration and fabrication services in Guernsey. Whether you need fire escapes, gates, or other metalwork projects restored or custom-built, our expert team has the skills and experience to deliver exceptional results. From welding and fabrication to comprehensive restoration, we pride ourselves on outstanding craftsmanship and customer service. No project is too big or small, and we ensure every detail is perfect. If you're looking for reliable metal restoration and fabrication services in Guernsey, contact us today to discuss how we can bring your metalwork back to life.</p>
         </div>
         <div className='home-gallery'>
-          {images.map((image, index) => (
-            <img key={index} src={image.src} alt={`gallery-img-${index + 1}`} className={image.className} />
-          ))}
+          <img src={ HomeGalleryTn } alt="" />
         </div>
       </div>
     </>

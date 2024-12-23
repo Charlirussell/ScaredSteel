@@ -1,25 +1,10 @@
 import React from 'react';
 import MetalworksImg from "/src/assets/images/grinder-1.jpg";
-import MetalImage1 from '../../assets/images/metal-1.jpg';
-import MetalImage2 from '../../assets/images/metal-2.jpg';
-import MetalImage3 from '../../assets/images/metal-3.jpg';
-import MetalImage4 from '../../assets/images/metal-4.jpg';
-import MetalImage5 from '../../assets/images/metal-5.jpg';
-import MetalImage6 from '../../assets/images/metal-6.jpg';
+import MetalGalleryTn from "/src/assets/images/metal-gallery-tn.webp";
 
 import './Metalwork.scss';
 
 const Metalwork = () => {
-
-    const images = [
-      {src: MetalImage1, className: 'metal-img-1'},
-      {src: MetalImage2, className: 'metal-img-2'},
-      {src: MetalImage3, className: 'metal-img-3'},
-      {src: MetalImage4, className: 'metal-img-4'},
-      {src: MetalImage5, className: 'metal-img-5'},
-      {src: MetalImage6, className: 'metal-img-6'},
-
-    ];
 
   return (
     <>
@@ -41,9 +26,7 @@ const Metalwork = () => {
           </div>
           <div className='metalwork-gallery-container'>
           <div className='metalwork-gallery'>
-            {images.map((image, index) => (
-                <img key={index} src={image.src} alt={`gallery-img-${index + 1}`} className={image.className} />
-              ))}
+              <img src={ MetalGalleryTn } alt="" />
             </div>
           </div>
       </div>
