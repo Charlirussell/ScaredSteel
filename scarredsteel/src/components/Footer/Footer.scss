@@ -12,10 +12,6 @@
   align-items: flex-start;
   max-width: 80em;
   margin: 0 auto;
-  
-  @media (max-width: 768px) {
-    align-items: center;
-  }
 }
 
 .footer-links {
@@ -111,5 +107,37 @@
         text-decoration: underline;
       }
     }
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+  .footer-content {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; 
+    align-items: center;
+    padding: 1em; 
+  }
+
+  .footer-links {
+    margin-bottom: 2em; 
+    text-align: center; 
+  }
+
+  .form-section {
+    max-width: 100%; 
+    margin-bottom: 2em; 
+    padding: 1em;
+  }
+
+  .footer-copyright {
+    font-size: 0.9em; 
+    padding: 0.7em 0; 
   }
 }

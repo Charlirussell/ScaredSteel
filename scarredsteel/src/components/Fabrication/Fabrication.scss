@@ -65,3 +65,23 @@
   .fabrication-gallery img {
     object-fit: cover;
   }
+
+  /* Media Queries */
+
+  @media (max-width: 768px) {
+  
+    .fabrication-paragraph h1 {
+      margin-top: 1em;
+      font-size: 2em; 
+    }
+  
+    .fabrication-paragraph p {
+      font-size: 1rem; 
+      line-height: 1.4; 
+    }
+    
+    .fabrication-gallery img {
+      width: 100%; 
+      height: auto; 
+    }
+  }

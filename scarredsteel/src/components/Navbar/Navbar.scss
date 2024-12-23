@@ -49,12 +49,12 @@
   @media (max-width: 768px) {
     display: none;
     flex-direction: column;
-    width: 100%; /* Use the full width */
+    width: 100%; 
     height: 40%;
     background-color: v.$black;
-    position: fixed; /* Ensure it's fixed relative to the viewport */
-    top: 0; /* Start from the top */
-    left: 0; /* Align with the left edge */
+    position: fixed;
+    top: 0;
+    left: 0; 
     z-index: 50;
   
     &.show-menu {
@@ -63,7 +63,7 @@
   
     .menu {
       width: 100%;
-      text-align: center;
+      text-align: right;
       padding: 1em;
       color: v.$green;
     }

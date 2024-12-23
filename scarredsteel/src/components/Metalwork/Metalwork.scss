@@ -66,3 +66,23 @@
   .metalwork-gallery img {
     object-fit: cover; 
   }
+
+  /* Media Queries */
+
+  @media (max-width: 768px) {
+  
+    .metalwork-paragraph h1 {
+      margin-top: 1em;
+      font-size: 2em; 
+    }
+  
+    .metalwork-paragraph p {
+      font-size: 1rem; 
+      line-height: 1.4; 
+    }
+    
+    .metalwork-gallery img {
+      width: 100%; 
+      height: auto; 
+    }
+  }
