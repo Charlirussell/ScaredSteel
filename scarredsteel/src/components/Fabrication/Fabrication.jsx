@@ -28,7 +28,10 @@ const Fabrication = () => {
         importImages();
       }, []);
 
-      
+      const toggleText = () => {
+        setIsReadMoreOpen(!isReadMoreOpen);
+      };
+    
   return (
     <>
       <div className='fabrication-main'>
@@ -45,7 +48,18 @@ const Fabrication = () => {
       <div className='fabrication-section'>
         <div className='fabrication-paragraph'>
             <h1>Our Services</h1>
-            <p>At Scarred Steel, we offer top-tier metal fabrication services in Guernsey, designed to meet your unique needs. Whether you're looking for custom-built gates, bespoke metalwork, or repairs, our skilled team uses precision techniques and high-quality materials to bring your vision to life. We specialize in delivering durable, visually striking results for both residential and commercial projects. From the initial concept to the finished product, we work closely with you to ensure every detail is perfect. Get in touch today to learn how Scarred Steel can turn your ideas into reality with our expert metal fabrication services.</p>
+            <p>
+              At Scarred Steel, we offer top-tier metal fabrication services in Guernsey, designed to meet your unique needs.
+              {isReadMoreOpen && (
+                <>
+                {' '}  
+                Whether you're looking for custom-built gates, bespoke metalwork, or repairs, our skilled team uses precision techniques and high-quality materials to bring your vision to life. We specialize in delivering durable, visually striking results for both residential and commercial projects. From the initial concept to the finished product, we work closely with you to ensure every detail is perfect. Get in touch today to learn how Scarred Steel can turn your ideas into reality with our expert metal fabrication services.
+                </>
+              )}
+            </p>
+            <button onClick={toggleText} className='read-more-btn'>
+              {isReadMoreOpen ? 'Read Less' : 'Read More'}
+            </button>
         </div>
         <div className='fabrication-gallery'>
           {/* Lightbox Thumbnail */}
