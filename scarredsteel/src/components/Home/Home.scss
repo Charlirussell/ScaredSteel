@@ -47,8 +47,15 @@
 .home-paragraph {
   margin-bottom: 2em;
   text-align: center;
-
 }
+
+.read-more-btn{
+  all: unset; 
+  display: inline-block;
+  color: v.$white;
+  margin: 1em;
+}
+
 
 .home-gallery {
   .thumbnail-btn {
@@ -64,6 +71,7 @@
     height: auto;
   }
 }
+
 
   /* Media Queries */
 
