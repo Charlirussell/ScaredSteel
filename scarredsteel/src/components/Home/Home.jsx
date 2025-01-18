@@ -25,7 +25,7 @@ const Home = () => {
           <p>At Scarred Steel, we specialize in high-quality metal restoration and fabrication services in Guernsey. Whether you need fire escapes, gates, or other metalwork projects restored or custom-built, our expert team has the skills and experience to deliver exceptional results. From welding and fabrication to comprehensive restoration, we pride ourselves on outstanding craftsmanship and customer service. No project is too big or small, and we ensure every detail is perfect. If you're looking for reliable metal restoration and fabrication services in Guernsey, contact us today to discuss how we can bring your metalwork back to life.</p>
         </div>
         <div className='home-gallery'>
-          <img src={ HomeGalleryTn } alt="" />
+          <img src={ HomeGalleryTn } alt="Thumbnail1" class="thumbnail" />
         </div>
       </div>
     </>
