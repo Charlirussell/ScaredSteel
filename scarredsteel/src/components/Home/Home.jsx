@@ -55,6 +55,12 @@ const Home = () => {
               <img src={ HomeGalleryTn } alt="Thumbnail1" class="thumbnail" />
             </button>
           </div>
+          {/* Lightbox */}
+          <Lightbox
+            open={isOpen}
+            close={() => setIsOpen(false)}
+            slides={images}
+          />
         </div>
       </div>
     </>
