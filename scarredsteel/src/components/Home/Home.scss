@@ -51,14 +51,19 @@
 }
 
 .home-gallery {
-  .thumbnail{
-    display: block; 
+  .thumbnail-btn {
+    all: unset; 
+    display: inline-block;
+    cursor: zoom-in;
+  }
+
+  .thumbnail {
+    display: block;
     margin: 0 auto;
     max-width: 80%;
     height: auto;
   }
 }
-
 
   /* Media Queries */
 

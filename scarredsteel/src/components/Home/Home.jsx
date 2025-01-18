@@ -1,10 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 import HomeImg from '/src/assets/images/welding-far.jpeg';
 import HomeGalleryTn from '/src/assets/images/h-gallery-tn.webp';
+
 import './Home.scss';
 
 
 const Home = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const [images, setImages] = useState ([]);
+
+  useEffect(() => {
+    const importImages = async () => {
+      const imagePaths = [
+        import('../../assets/images/stairs-1.jpg'),
+        import('../../assets/images/stairs-2.jpg'),
+        import('../../assets/images/stairs-3.jpg'),
+        import('../../assets/images/stairs-4.jpg'),
+        import('../../assets/images/stairs-5.jpg'),
+        import('../../assets/images/stairs-6.jpg'),
+        import('../../assets/images/stairs-7.jpg'),
+      ];
+      const loadedImages = await Promise.all(imagePaths);
+
+      setImages(loadedImages.map(image => ({ src: image.default })));
+    };
+    importImages();
+  }, []);
 
   return (
     <>
@@ -15,7 +39,7 @@ const Home = () => {
           <h2>Metal Works Guernsey</h2>
         </div>
         <div className='button-container'>
-          <button><a href="tel:07911711828">Call Us</a></button>
+          <button classname='main-btn'><a href="tel:07911711828">Call Us</a></button>
           <button><a href="mailto:scarredsteelmetalmaintenance@gmail.com">Email Us</a></button>
         </div>
       </div>
@@ -25,7 +49,12 @@ const Home = () => {
           <p>At Scarred Steel, we specialize in high-quality metal restoration and fabrication services in Guernsey. Whether you need fire escapes, gates, or other metalwork projects restored or custom-built, our expert team has the skills and experience to deliver exceptional results. From welding and fabrication to comprehensive restoration, we pride ourselves on outstanding craftsmanship and customer service. No project is too big or small, and we ensure every detail is perfect. If you're looking for reliable metal restoration and fabrication services in Guernsey, contact us today to discuss how we can bring your metalwork back to life.</p>
         </div>
         <div className='home-gallery'>
-          <img src={ HomeGalleryTn } alt="Thumbnail1" class="thumbnail" />
+          {/* Lightbox Thumbnail */}
+          <div classname='lightbox-container'>
+            <button className='thumbnail-btn' type='button' onClick={() => setIsOpen(true)}>
+              <img src={ HomeGalleryTn } alt="Thumbnail1" class="thumbnail" />
+            </button>
+          </div>
         </div>
       </div>
     </>
