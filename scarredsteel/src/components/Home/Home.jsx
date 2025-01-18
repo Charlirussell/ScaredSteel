@@ -43,7 +43,7 @@ const Home = () => {
           <h2>Metal Works Guernsey</h2>
         </div>
         <div className='button-container'>
-          <button classname='main-btn'><a href="tel:07911711828">Call Us</a></button>
+          <button><a href="tel:07911711828">Call Us</a></button>
           <button><a href="mailto:scarredsteelmetalmaintenance@gmail.com">Email Us</a></button>
         </div>
       </div>
@@ -76,7 +76,7 @@ const Home = () => {
             close={() => setIsLightboxOpen(false)}
             slides={images}
           />
-        </div>1
+        </div>
       </div>
     </>
   );
