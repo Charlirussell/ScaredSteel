@@ -8,6 +8,7 @@ import './Restoration.scss';
 
 const Restoration = () => {
     const [isLightboxOpen, setIsLightboxOpen] = useState(false);
+    const [isReadMoreOpen, setIsReadMoreOpen] = useState(false);
     const [images, setImages] = useState ([]);
   
     useEffect(() => {
@@ -28,6 +29,10 @@ const Restoration = () => {
       importImages();
     }, []);
 
+    const toggleText = () => {
+      setIsReadMoreOpen(!isReadMoreOpen);
+    };
+  
   return (
     <>
       <div className='restoration-main'>
@@ -44,7 +49,18 @@ const Restoration = () => {
       <div className='restoration-section'>
         <div className='restoration-paragraph'>
             <h1>Restoration Services</h1>
-            <p>At Scarred Steel, we specialize in the restoration and repair of various metalwork projects in Guernsey, including fire escapes, gates, and more. From intricate wrought iron details to essential repairs, we focus on delivering exceptional craftsmanship and top-tier service. Our experienced team uses advanced restoration techniques and high-quality materials to bring aged or damaged metalwork back to life. Whether you need restoration for outdoor structures, industrial machinery, or custom gates, we're here to help. Contact us today to learn how Scarred Steel can transform your metalwork with our expert restoration services.</p>
+            <p>
+              At Scarred Steel, we specialize in the restoration and repair of various metalwork projects in Guernsey, including fire escapes, gates, and more.
+              {isReadMoreOpen && (
+                <>
+                {' '}
+                From intricate wrought iron details to essential repairs, we focus on delivering exceptional craftsmanship and top-tier service. Our experienced team uses advanced restoration techniques and high-quality materials to bring aged or damaged metalwork back to life. Whether you need restoration for outdoor structures, industrial machinery, or custom gates, we're here to help. Contact us today to learn how Scarred Steel can transform your metalwork with our expert restoration services.
+                </>
+              )}
+            </p>
+            <button onClick={toggleText} className='read-more-btn'>
+              {isReadMoreOpen ? 'Read Less' : 'Read More'}
+            </button> 
         </div>
         <div className='restoration-gallery'>
             {/* Lightbox Thumbnail */}
