@@ -76,7 +76,7 @@ const Home = () => {
             close={() => setIsLightboxOpen(false)}
             slides={images}
           />
-        </div>
+        </div>1
       </div>
     </>
   );
