@@ -64,7 +64,7 @@ const Restoration = () => {
         </div>
         <div className='restoration-gallery'>
             {/* Lightbox Thumbnail */}
-          <div classname='lightbox-container'>
+          <div className='lightbox-container'>
             <button className='thumbnail-btn' type='button' onClick={() => setIsLightboxOpen(true)}>
               <img src={ RestoGalleryTn } alt="Thumbnail1" class="thumbnail" />
             </button>

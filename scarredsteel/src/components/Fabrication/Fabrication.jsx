@@ -63,7 +63,7 @@ const Fabrication = () => {
         </div>
         <div className='fabrication-gallery'>
           {/* Lightbox Thumbnail */}
-          <div classname='lightbox-container'>
+          <div className='lightbox-container'>
             <button className='thumbnail-btn' type='button' onClick={() => setIsLightboxOpen(true)}>
               <img src={ FabricationGalleryTn } alt="Thumbnail1" class="thumbnail" />
             </button>

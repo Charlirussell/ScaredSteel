@@ -2,6 +2,32 @@ import { Link } from 'react-router-dom';
 import './Footer.scss';
 
 const Footer = () => {
+  {/* Form submission */}
+  const onSubmit = async (event) => {
+      event.preventDefault();
+
+      const formData = new FormData(event.target);
+      {/* Access key */}
+      formData.append('access_key', '3189d19c-e3e4-4e0e-bde3-fab3945d9d78'); 
+
+      try { 
+          const response = await fetch('https://api.web3forms.com/submit', {
+            method: "POST",
+            body: formData,
+          });
+          const data = await response.json();
+
+          if (data.success) { 
+              alert('Message sent');
+              event.target.reset();
+          } else {
+              alert('Message not sent');
+          }
+        } catch (error) {
+          console.error('Error whilst submitting form',error);
+          alert('An error occurred whilst submitting the form, please try again.');
+        };
+      };     
   return (
     <footer className="footer-container">
       <div className="footer-content">
@@ -23,7 +49,7 @@ const Footer = () => {
         </div>
         <div className="form-section">
           <h3>Contact us now for a free quote</h3>
-          <form>
+          <form onSubmit={onSubmit}>
             <div className="form-input">
               <label htmlFor="name">Name</label>
               <input type="text" id="name" name="name" required />

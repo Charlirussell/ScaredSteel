@@ -64,7 +64,7 @@ const Metalwork = () => {
         </div>
           <div className='metalwork-gallery'>
             {/* Lightbox */}
-            <div classname='lightbox-container'>
+            <div className='lightbox-container'>
               <button className='thumbnail-btn' type='button' onClick={() => setIsLightboxOpen(true)}>
                 <img src={ MetalGalleryTn } alt="Thumbnail1" class="thumbnail" />
               </button>
