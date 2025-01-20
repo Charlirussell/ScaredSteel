@@ -76,7 +76,7 @@ p {
   -2px -2px 4px rgba(0, 0, 0, 0.7);
 }
 
-button {
+.custom-button {
     background-color: initial;
     background-image: linear-gradient(-180deg, v.$light-green, v.$green, v.$dark-green);
     border-radius: 0.5em;
@@ -100,7 +100,7 @@ button {
     }
   }
 
-button:hover {
+.custom-button:hover {
     color: v.$yellow; 
     transform: scale(1.1);
     box-shadow: 0 4.5px 9px rgba(0, 0, 0, 0.2);
@@ -133,11 +133,3 @@ button:hover {
   }
 }
 
-.yarl__navigation_prev, .yarl__navigation_next {
-  height: 10%;
-  width: 10%;
-  background-color: v.$green;
-  color: v.$white;
-  margin: 1em 1em 1em 0;
-  border-radius: 0.3em;
-}

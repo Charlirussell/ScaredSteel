@@ -41,8 +41,8 @@ const Fabrication = () => {
           <h2>Fabrication Guernsey</h2>
         </div>
         <div className='button-container'>
-          <button><a href="tel:07911711828">Call Us</a></button>
-          <button><a href="mailto:scarredsteelmetalmaintenance@gmail.com">Email Us</a></button>
+          <button className="custom-button"><a href="tel:07911711828">Call Us</a></button>
+          <button className="custom-button"><a href="mailto:scarredsteelmetalmaintenance@gmail.com">Email Us</a></button>
         </div>
       </div>
       <div className='fabrication-section'>

@@ -66,7 +66,7 @@ const Footer = () => {
               <label htmlFor="message">Message</label>
               <textarea id="message" name="message" rows="4" required></textarea>
             </div>
-            <button className="form-button" type="submit">Submit</button>
+            <button className="custom-button" type="submit">Submit</button>
           </form>
         </div>
       </div>
