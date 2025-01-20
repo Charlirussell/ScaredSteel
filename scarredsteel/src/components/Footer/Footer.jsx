@@ -32,14 +32,19 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-links">
-        <h3>Site Map</h3>
+        <h3 className='footer-h3'>Contact Us</h3>
+          <ul>
+            <li><a href="tel:07911711828">Phone: 07911711828</a></li>
+            <li><a href="mailto:scarredsteelguernsey@gmail.com">Email: scarredsteelguernsey@gmail.com</a></li>
+          </ul>
+        <h3 className='footer-h3'>Site Map</h3>
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/metalworks">Metalworks</Link></li>
             <li><Link to="/restoration">Restoration</Link></li>
             <li><Link to="/fabrication">Fabrication</Link></li>
           </ul>
-          <h3>Links</h3>
+          <h3 className='footer-h3'>Links</h3>
           <ul>
             <li><a href="https://www.facebook.com/profile.php?id=100063628014620" target="_blank" rel="noopener noreferrer">Facebook</a></li>
             <li><Link to="/privacy">Privacy Policy</Link></li>

@@ -67,7 +67,7 @@ const Home = () => {
           {/* Lightbox Thumbnail */}
           <div className='lightbox-container'>
             <button className='thumbnail-btn' type='button' onClick={() => setIsLightboxOpen(true)}>
-              <img src={ HomeGalleryTn } alt="Thumbnail1" class="thumbnail" />
+              <img src={ HomeGalleryTn } alt="Thumbnail1" className="thumbnail" />
             </button>
           </div>
           {/* Lightbox */}
