@@ -8,7 +8,7 @@ const Header = () => {
                 <div className='home-logo'>
                     <img src={textLogo} alt="logo-1" />
                 </div>
-                <a href="tel:07911711828" className='phone-number'>07911 711828</a>
+                <a href="tel:07781162102" className='phone-number'>07781 162102</a>
             </div>
         </header>
     );

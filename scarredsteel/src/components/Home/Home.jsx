@@ -43,7 +43,7 @@ const Home = () => {
           <h2>Metal Works Guernsey</h2>
         </div>
         <div className='button-container'>
-          <button className="custom-button"><a href="tel:07911711828">Call Us</a></button>
+          <button className="custom-button"><a href="tel:07781162102">Call Us</a></button>
           <button className="custom-button"><a href="mailto:scarredsteelguernsey@gmail.com">Email Us</a></button>
         </div>
       </div>
